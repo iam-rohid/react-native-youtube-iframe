@@ -114,6 +114,11 @@ const YoutubeIframe = (props, ref) => {
           PLAYER_FUNCTIONS.seekToScript(seconds, allowSeekAhead),
         );
       },
+      setFullscreen: fullscreen => {
+        webViewRef.current.injectJavaScript(
+          PLAYER_FUNCTIONS.setFullscreen(fullscreen),
+        );
+      },
     }),
     [],
   );

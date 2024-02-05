@@ -65,6 +65,13 @@ true;
 
     return `player.${func}({videoId: ${JSON.stringify(videoId)}}); true;`;
   },
+
+  setFullscreen: fullscreen => {
+    if (fullscreen) {
+      return 'video.requestFullscreen()';
+    }
+    return 'document.exitFullscreen()';
+  },
 };
 
 export const playMode = {
