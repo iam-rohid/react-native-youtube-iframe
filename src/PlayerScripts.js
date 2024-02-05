@@ -68,7 +68,7 @@ true;
 
   setFullscreen: fullscreen => {
     if (fullscreen) {
-      return 'document.querySelector("video")?.requestFullscreen(); true;';
+      return 'document.querySelector(".video-stream.html5-main-video").webkitRequestFullscreen(); true;';
     }
     return 'document.exitFullscreen(); true;';
   },
