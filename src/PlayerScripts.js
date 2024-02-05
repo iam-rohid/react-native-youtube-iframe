@@ -68,7 +68,7 @@ true;
 
   setFullscreen: fullscreen => {
     if (fullscreen) {
-      return 'player.requestFullscreen(); true;';
+      return 'document.querySelector("iframe")?.requestFullscreen(); true;';
     }
     return 'document.exitFullscreen(); true;';
   },
