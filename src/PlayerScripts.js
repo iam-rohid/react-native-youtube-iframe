@@ -68,7 +68,7 @@ true;
 
   setFullscreen: fullscreen => {
     if (fullscreen) {
-      return 'video.requestFullscreen(); true;';
+      return 'player.requestFullscreen(); true;';
     }
     return 'document.exitFullscreen(); true;';
   },
